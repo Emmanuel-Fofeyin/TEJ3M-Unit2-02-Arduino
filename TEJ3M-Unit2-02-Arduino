@@ -1,0 +1,21 @@
+/* Copyright(c) 2023 Emmanuel Fofeyin All rights reserved.
+   Created by : Emmanuel Fofeyin
+   Created on : February 2023
+   TEJ3M-Unit2-01-Arduino File.
+ */
+
+int blinkTime = 1000;
+
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(blinkTime);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+
+  blinkTime += 1000;
+}
